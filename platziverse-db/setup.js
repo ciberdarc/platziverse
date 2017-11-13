@@ -36,7 +36,7 @@ async function setup () {
 }
 
 function handleFatalError (err) {
-  console.error(`${chalk.red('[Error Customizado ]')} ${err.message}`)
+  console.error(`${chalk.red.bold('[Error Customizado]')} ${err.message}`)
   console.error(err.stack)
   process.exit(1)
 }
